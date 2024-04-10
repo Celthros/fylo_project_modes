@@ -1,0 +1,21 @@
+{
+  "name": "flyo_tailwind_project",
+  "version": "1.0.0",
+  "description": "Fylo landing page with dark/light mode switcher using tailwindcss",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./input.css -o ./css/style.css",
+    "watch": "tailwindcss -i ./input.css -o ./css/style.css --watch",
+    "minify": "tailwindcss -i ./input.css -o ./css/style.css --minify"
+  },
+  "keywords": [
+    "tailwindcss",
+    "CSS",
+    "new environment"
+  ],
+  "author": "Tyler Anderson",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}

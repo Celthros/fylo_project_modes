@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+}
+
+body{
+    @apply dark:bg-darkBlue dark:text-white font-opensans;
+}
+
+header{
+    @apply container mx-auto mt-10 px-6 text-center h-40 md:h-20;
+}
+
+.dynamic-logo{
+    @apply bg-logo-light-mode dark:bg-logo-dark-mode bg-no-repeat h-20 w-48 mx-auto md:mx-0 md:absolute top-10 left-10;
+}
+
+.menu {
+    @apply flex items-center justify-center space-x-4 md:space-x-10 md:absolute md:top-12 md:right-10;
+}
+
+.menu a {
+    @apply hover:text-accentCyan font-semibold;
+}
+
+.theme-toggle{
+    @apply text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5;
+}
